@@ -47,12 +47,9 @@ public class MCEngineCurrency extends JavaPlugin {
             currencyApi.initDB();
 
             // Register listener and command using the shared API
-            getServer().getPluginManager().registerEvents(
-                new MCEngineCurrencyCommonListener(currencyApi), this
-            );
-            getCommand("currency").setExecutor(
-                new MCEngineCurrencyCommonCommand(this, currencyApi)
-            );
+            getServer().getPluginManager().registerEvents(new MCEngineCurrencyCommonListener(currencyApi), this);
+            getCommand("currency").setExecutor(new MCEngineCurrencyCommonCommand(this, currencyApi));
+            getCommand("currency").setTabCompleter(new MCEngineCurrencyCommonTabCompleter());
             if (hookHeadDB) {
                 // Pass currencyApi to the hook listener instead of "this"
                 getServer().getPluginManager().registerEvents(new MCEngineCurrencyCommonListenerHookHeadDB(currencyApi), this);
