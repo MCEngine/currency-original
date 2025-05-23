@@ -3,6 +3,7 @@ package io.github.mcengine.spigotmc.currency;
 import io.github.mcengine.api.currency.MCEngineCurrencyApi;
 import io.github.mcengine.common.currency.command.MCEngineCurrencyCommonCommand;
 import io.github.mcengine.common.currency.listener.hook.MCEngineCurrencyCommonListenerHookHeadDB;
+import io.github.mcengine.common.currency.tabcompleter.MCEngineCurrencyCommonTabCompleter;
 import io.github.mcengine.common.currency.listener.MCEngineCurrencyCommonListener;
 import org.bukkit.plugin.java.JavaPlugin;
 

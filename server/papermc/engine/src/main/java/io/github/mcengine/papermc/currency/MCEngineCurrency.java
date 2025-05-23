@@ -4,6 +4,7 @@ import io.github.mcengine.api.currency.MCEngineCurrencyApi;
 import io.github.mcengine.common.currency.command.MCEngineCurrencyCommonCommand;
 import io.github.mcengine.common.currency.listener.hook.MCEngineCurrencyCommonListenerHookHeadDB;
 import io.github.mcengine.common.currency.listener.MCEngineCurrencyCommonListener;
+import io.github.mcengine.common.currency.tabcompleter.MCEngineCurrencyCommonTabCompleter;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import java.io.File;
