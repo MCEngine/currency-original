@@ -51,7 +51,7 @@ allprojects {
         maven { url 'https://oss.sonatype.org/content/repositories/central' }
 
         maven {
-            url = uri('https://maven.pkg.github.com/MCEngine/mcengine')
+            url = uri('https://maven.pkg.github.com/MCEngine/currency-api')
             credentials {
                 username = project.git_user_name ?: 'null'
                 password = project.git_user_token ?: project.git_repository_token ?: project.git_organization_token ?: 'null'
