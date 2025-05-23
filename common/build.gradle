@@ -1,0 +1,17 @@
+plugins {
+    id 'java'
+}
+
+dependencies {
+    compileOnly 'io.github.mcengine:mcengine-currency-api:1.0.0-1-SNAPSHOT'
+
+    // Server Platform
+    compileOnly 'org.spigotmc:spigot-api:1.21.4-R0.1-SNAPSHOT'
+
+    // Plugin Hook
+    compileOnly("com.arcaniax:HeadDatabase-API:1.3.2")
+}
+
+shadowJar {
+    archiveBaseName.set("${project.jarName}-Common")
+}

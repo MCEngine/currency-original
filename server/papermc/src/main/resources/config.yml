@@ -1,0 +1,23 @@
+database:
+  type: sqlite
+
+  mysql:
+    host: localhost
+    user: root
+    password: ""
+    port: 3306
+    ssl: false
+    name: minecraft
+
+  sqlite:
+    path: currency.db
+
+hook:
+  HeadDB:
+    enable: false
+
+texture:
+  coin: 63066
+  copper: 40534
+  silver: 51708
+  gold: 56431
